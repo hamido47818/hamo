@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أنواع وعناصر الجغرافيا</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>ما هو الانمى</h1>
+  <p>كل ما تحتاج معرفته عن الانمى</p>
+  <button>  <a href="http://https://www.animedar.cyou/"></a>اضغط هنا</button>
+
+  <h2>ما هو الانمى</h2>
+  <p>عروض كارتون يابانية لا تتناسب مع الاطفال بسبب الدموية و عمق القصة</p>
+
+  <h2>أنواع الانمى</h2>
+  <div class="box">
+    <h3>انمى الشونين</h3>
+    <p>يستهدف فى الاغلب الشباب</p>
+    
+  </div>
+<video src="song.mp4" controls width="500" height="250"></video>
+  <div class="box">
+    <h3>انمى السينين</h3>
+    <p>وهو انمى يستهدف البالغين بشكل اكبر بسبب اقتباسه اكثر من الواقع</p>
+    
+  </div>
+
+  <h2>عناصر الانمى</h2>
+  <ul>
+    <li>القصة</li>
+    <li>الرسم</li>
+    <li>التحريك</li>
+    <li>الاقتباس الجيد من المنجا</li>
+    
+  </ul>
+
+  <h2>صور لاحد الشخصسات</h2>
+  <h3>سون جوكو</h3>
+  <img src="son goku.jpeg" alt="">
+
+  <h3>خريطة طبيعية</h3>
+  <img src="naruto.jpeg" alt="">
+
+  <h2>ابظ\طال الجيل القديم و الجيل الجديد</h2>
+  <table>
+    <tr>
+      <th>جوكو</th>
+      <th>ناروتو</th>
+      <th>لوفى</th>
+    </tr>
+    <tr>
+      <td>ميدوريا</td>
+      <td>استا</td>
+      <td>شينرا</td>
+    </tr>
+    <tr>
+      <td>أمثلة</td>
+      <td>fire force</td>
+      <td>black clover</td>
+    </tr>
+    <tr>
+      <td>الهدف</td>
+      <td>فهم ما هو</td>
+      <td>الانمى اليابانى</td>
+    </tr>
+  </table>
+
+  <h2>اختبر معلوماتك</h2>
+  <label for="question">ما هة الجيل الافضل فى الانمى</label>
+  <select id="question">
+    <option value="">اختر...</option>
+    <option value="القديم">القديم</option>
+    <option value="الجديد">الجديد</option>
+    <option value="لا احب الانمى">لا احب الانمى</option>
+  </select>
+  <button class="btn" onclick="checkAnswer()">تحقق</button>
+  <p id="result"></p>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('question').value;
+      const result = document.getElementById('result');
+      if (answer === 'العلاقات بين الإنسان والبيئة') {
+        result.textContent = 'إجابة صحيحة!';
+        result.style.color = 'green';
+      } else {
+        result.textContent = 'إجابة خاطئة، حاول مرة أخرى.';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+
+</body>
+</html>
